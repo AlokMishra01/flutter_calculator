@@ -16,8 +16,8 @@ class CalculatorButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
       onPressed: onTap,
-      color: Colors.white,
-      elevation: 1,
+      color: Colors.white.withOpacity(0.6),
+      elevation: 0.5,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12.0),
       ),
@@ -25,7 +25,7 @@ class CalculatorButton extends StatelessWidget {
         label,
         style: TextStyle(
           color: contentColor,
-          fontSize: 24.0,
+          fontSize: 28.0,
           fontWeight: FontWeight.w600,
         ),
       ),
